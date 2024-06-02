@@ -4,6 +4,6 @@ const h2Title = document.getElementById('title');
 
 // h2Title.textContent = 'Mangos and Bananas';
 
-// h2Title.innerHTML = '<em>Mangos and Bananas</em>';
+h2Title.innerHTML = '<em>Mangos and Bananas</em>';
 
-h2Title.textContent = '<em>Mangos and Bananas</em>';
+// h2Title.textContent = '<em>Mangos and Bananas</em>';
