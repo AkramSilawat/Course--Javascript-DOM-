@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Append Chidren - JavaScript DOM - dcode</h1>
+
+    <ul id="my-list"></ul>
+
+
+    <script>
+        function createListItem(text) {
+            var li = document.createElement('li');
+            li.textContent = text;
+            return li;
+        }
+
+        function appendChildren(parent, children) {
+            children.forEach(function (child) {
+                parent.appendChild(child);
+            });
+        }
+
+        var myList = document.getElementById('my-list');
+
+        var items = [
+            createListItem('Dom'),
+            createListItem('Alex'),
+            createListItem('John')
+        ];
+
+        // console.log(myList);
+
+        // appendChildren(myList, items);
+
+        items.forEach(function (li){
+            myList.appendChild(li);
+        });
+    </script>
+</body>
+
+</html>

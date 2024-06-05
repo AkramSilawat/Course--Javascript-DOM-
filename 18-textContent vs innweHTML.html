@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textContent vs innerHTML - JavaScript DOM - dcode</title>
+</head>
+<body>
+    <!-- Both uesd to add content to element/tag -->
+
+    <h1> textContent vs innerHTML - JavaScript DOM - dcode</h1>
+
+    <div id="my-div"></div>
+
+
+
+    <script>
+
+        document.createElement('tag')
+
+        const myDiv = document.getElementById('my-div')
+
+        myDiv.innerHTML = 'Hey my name is <strong> Dom </strong>';
+
+        myDiv.textContent = 'Hey my name is <strong> Dom </strong>';
+    </script>
+</body>
+</html>
