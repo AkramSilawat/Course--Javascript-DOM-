@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentElement</title>
+</head>
+
+<style>
+    #area {
+        background-color: black;
+        color: white;
+        padding: 25px;
+    }
+    #box{
+        background-color: red;
+        padding: 25px;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <h1>Element.insertAdjacentElement - JavaScript DOM</h1>
+    <div id="area">
+        <h2>Put some text inside there</h2>
+    </div>
+
+
+    <script>
+        /*
+            beforebegin - before element
+            afterbegin - first child
+            beforeend - last child
+            afterend - after element
+            */
+
+
+        const area = document.getElementById("area");
+
+        const box = document.createElement("div");
+
+        box.id = "box";
+
+        area.insertAdjacentElement("afterend", box);
+    </script>
+</body>
+</html>
