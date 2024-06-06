@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsertAdjacentHTML</title>
+</head>
+
+<body>
+    <h1>Element.insertAdjacentHTML - JavaScript DOM</h1>
+    <p id="myPara">I'll write some <em>text</em>.</p>
+
+
+    <script>
+        /*
+            beforebegin - before element
+            afterbegin - first child
+            beforeend - last child
+            afterend - after element
+            */
+
+
+        const myPara = document.getElementById('myPara');
+
+        const em = myPara.querySelector('em');
+
+        em.addEventListener('click', console.log);
+
+        // myPara.innerHTML += '<strong>dcode</strong>'
+
+        // myPara.insertAdjacentHTML('beforebegin', '<strong>dcode</strong>')
+        // myPara.insertAdjacentHTML('afterbegin', '<strong>dcode</strong>')
+        myPara.insertAdjacentHTML('beforeend', '<strong>dcode</strong>')
+        // myPara.insertAdjacentHTML('afterend', '<strong>dcode</strong>')
+
+    </script>
+</body>
+
+</html>
