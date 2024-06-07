@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ReplaceChild() - JavaScript - DOM</h1>
+    <ul id="myList">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+
+    <script>
+        const myList = document.getElementById("myList");
+
+        const cssListItem = myList.children[1];
+
+        
+        // Create a new Element/Node
+
+        const newListItem = document.createElement("li");
+        newListItem.textContent = "jQuery";
+
+        myList.replaceChild(newListItem,cssListItem);
+    </script>
+</body>
+</html>
