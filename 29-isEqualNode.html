@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isEqual()</title>
+</head>
+
+<body>
+    <h1><code>isEqual()</code></h1>
+    <ul class="tsummary summary--with-divider">
+        <li>tests it two nodes (elements) are equal</li>
+        <li>includes child nodes in test</li>
+    </ul>
+
+
+
+    <div class="test">
+        
+    </div>
+    <div class="test">
+        
+    </div> 
+   
+
+    <!-- <div class="test">
+        <strong>Test #2</strong>
+    </div>
+    <div class="test">
+        <strong>Test #2</strong>
+    </div>  -->
+
+
+<!-- 
+    <div class="test" id="myNode"></div>
+    <div class="test" id="myNode"></div> 
+    -->
+
+<!-- 
+    <div class="test" id="myNode"></div>
+    <div class="test" id="myNode"></div> 
+    -->
+
+
+<!-- 
+    <div class="test" id="myNode"></div>
+    <div id="myNode" class="test"></div> // true 
+    -->
+
+<!-- 
+    <div class="test" id="myNode"></div>
+    <span id="myNode" class="test"></span> // true 
+    -->
+
+
+
+    <script>
+
+        const div1 = document.querySelectorAll("div")[0];
+        const div2 = document.querySelectorAll("div")[1];
+
+        // const isEqual = div1.isEqualNode(div2);
+
+        const isEqual = div1.childNodes[0].isEqualNode(div2.childNodes[0]);
+
+        console.log(isEqual);
+
+
+    </script>
+</body>
+
+</html>
