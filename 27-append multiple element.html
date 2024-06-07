@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><code>append()</code> method</h1>
+    <ul class="summary">
+        <li>Let's you easily append multiple nodes (or elements)</li>
+        <li>Supports combination of text, text nodes and elements</li>
+        <li>Works in modern browsers (IE needs a polyfill)</li>
+    </ul>
+
+    <div id="myDiv"></div>
+
+
+    <script>
+
+        const myDiv = document.getElementById("myDiv");
+
+        const strong = document.createElement('strong');
+        const em = document.createElement('em');
+
+        const myTextNode = document.createTextNode('simple text');
+
+        strong.textContent = 'strong ';
+        em.textContent = 'emphasized ';
+
+        myDiv.append(strong, em, myTextNode, ' some more text');
+    </script>
+</body>
+</html>
