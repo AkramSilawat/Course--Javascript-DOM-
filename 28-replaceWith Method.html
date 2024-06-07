@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><code>replaceWith()</code></h1>
+    <ul class="summary">
+        <li>let's you easily replace a node with other nodes</li>
+        <li>natively supported on modern browsers (excwpt IE)</li>
+    </ul>
+
+    <div id="example">
+        <p>Sample Text</p>
+    </div>
+
+
+    <script>
+        const pTag = document.querySelector("#example p");
+
+        const newInput = document.createElement("input");
+        newInput.value = "I'm new!";
+
+        const newBtn = document.createElement("button");
+        newBtn.textContent = "Me too,";
+
+        // pTag.replaceWith(newInput, newBtn, "And I am some text!");
+
+        const newStrong = document.createElement("strong");
+        newStrong.textContent = "I am new and strong!";
+
+        pTag.childNodes[0].replaceWith(newStrong, "I am just new...");
+
+    </script>
+</body>
+
+</html>
