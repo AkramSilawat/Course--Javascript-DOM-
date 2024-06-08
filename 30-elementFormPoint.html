@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .outer {
+            width: 200px;
+            height: 120px;
+            background: #aaaaaa;
+            padding: 20px;
+        }
+
+        .inner {
+            width: 80px;
+            height: 80px;
+            background: #009578;
+            border: 2px solid #ffffff;
+            pointer-events: none;
+        }
+    </style>
+
+
+    <h1><code>elementFromPoint()</code>method</h1>
+
+    <ul class="tsummary summary--with-divider">
+        <li>allows you to find the top-most element given an (x,y position)</li>
+        <li>can probably come in handy when trying to work with an existing library or writing a new one</li>
+    </ul>
+
+
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+
+
+    <script>
+        let pos;
+
+        document.addEventListener("mousemove", ({ pageX, pageY }) => {
+            pos = `(${pageX, pageY})`;
+        })
+
+
+
+
+    // Terminal
+        // document.elementsFromPoint(82, 131);
+        // <div> class="outer"</div?
+
+        // document.elementsFromPoint(82, 131);
+        // (3)[div.outer, body#body, html]
+
+    </script>
+</body>
+
+</html>
