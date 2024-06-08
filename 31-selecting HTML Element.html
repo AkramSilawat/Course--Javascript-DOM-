@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myHeading">Selecting Elements</h1>
+    <ul class="tsummary summary--with-divider">
+        <li class="list-item">single element by id: <code> getElementById()</code></li>
+        <li class="list-item">single element by CSS selector: <code> querySelector()</code></li>
+        <li class="list-item">multiple element by CSS selector: <code> querySelectorAll()</code></li>
+        <li class="list-item">multiple element by class (live): <code> getElementsByClassName()</code></li>
+        <li class="list-item">multiple element by tag (live): <code> getElementsByTagName()</code></li>
+    </ul>
+
+    <script>
+        // const domsHeading = document.getElementById("myHeading");
+
+        // const domsHeading = document.querySelector("#myHeading");
+
+        // const domsHeading = document.querySelector(".list-item");
+
+        // console.log(listItem);
+
+
+        // const listItem = document.querySelectorAll(".list-item");
+
+        // const listItem = document.getElementsByClassName("li");
+
+        const listItem = document.getElementsByTagName("li");
+
+
+        console.log(listItem);
+    </script>
+</body>
+</html>
